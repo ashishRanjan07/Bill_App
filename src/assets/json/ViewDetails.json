@@ -1,0 +1,32 @@
+[
+    {
+        "id":1,
+        "subId":529,
+        "amount":1204,
+        "date":"20 June 2024"
+    },
+    {
+        "id":2,
+        "subId":530,
+        "amount":420,
+        "date":"05 Oct 2024"
+    },
+    {
+        "id":3,
+        "subId":531,
+        "amount":800,
+        "date":"16 Nov 2024"
+    },
+    {
+        "id":4,
+        "subId":532,
+        "amount":1205,
+        "date":"27 Nov 2024"
+    },
+    {
+        "id":5,
+        "subId":533,
+        "amount":100,
+        "date":"20 Aug 2024"
+    }
+]

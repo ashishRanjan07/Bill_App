@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "bankName":"ICICI",
+        "cardType":"Credit Card",
+        "cardName":"VISA",
+        "cardNumber":"4242 4242 4242 4242",
+        "accountHolderName":"Ashish Ranjan"
+    },
+    {
+        "id":2,
+        "bankName":"SBI",
+        "cardType":"Credit Card",
+        "cardName":"Rupay",
+        "cardNumber":"7271 4242 4242 9422",
+        "accountHolderName":"Ashish Ranjan"
+    },
+    {
+        "id":3,
+        "bankName":"YES Bank",
+        "cardType":"Credit Card",
+        "cardName":"Platinum",
+        "cardNumber":"7271 3423 4242 9422",
+        "accountHolderName":"Ashish Ranjan"
+    }
+]

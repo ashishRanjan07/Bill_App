@@ -1,0 +1,19 @@
+export const ImagePath = {
+    background:require("../assets/image/back.png"),
+    logo:require("../assets/image/logo.png"),
+    launcher:require("../assets/image/launcher.png"),
+    infoOne:require("../assets/image/infoOne.png"),
+    carouselOne:require("../assets/image/carouselOne.png"),
+    carouselTwo:require("../assets/image/carouselTwo.png"),
+    successIcon:require("../assets/image/success.png"),
+    activeOne:require("../assets/image/active1.png"),
+    activeTwo:require("../assets/image/active2.png"),
+    user:require("../assets/image/user.png"),
+    homeCard:require("../assets/image/homeCard.png"),
+    upi:require("../assets/image/upi.png"),
+    gPay:require("../assets/image/gpay.png"),
+    bgRed:require("../assets/image/bg_red.png"),
+    bgBlue:require("../assets/image/bg_blue.png"),
+    smallBack:require("../assets/image/smallBack.png"),
+    printer:require("../assets/image/printer.png")
+}

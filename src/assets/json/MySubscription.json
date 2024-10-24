@@ -1,0 +1,617 @@
+[
+  {
+    "id": 1,
+    "subscription_id": "490",
+    "validFrom": "2024-12-01",
+    "expireOn": "2025-01-23",
+    "status": "Over Due",
+    "amount": 520.0,
+    "name": "Printer as Service - Gold Package",
+    "details": [
+      {
+        "id": 1,
+        "subscription_id": "490",
+        "title": "SUBSCRIPTION DETAILS",
+        "name": "Printer as Service - Gold Package",
+        "billDetails": [
+          {
+            "id": 1,
+            "name": "Billing Cycle",
+            "nameValue": "Monthly"
+          },
+          {
+            "id": 2,
+            "name": "Next Scheduled Billing Date",
+            "nameValue": "2022-07-20"
+          },
+          {
+            "id": 3,
+            "name": "Billing Cycle Reference Date",
+            "nameValue": "2022-07-20"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "SUBSCRIPTION TERM",
+        "billDetails": [
+          {
+            "id": 1,
+            "name": "Minimum Term",
+            "nameValue": "1 Month"
+          },
+          {
+            "id": 2,
+            "name": "Minimum Term Start",
+            "nameValue": "2022-07-20"
+          },
+          {
+            "id": 3,
+            "name": "Minimum Term End",
+            "nameValue": "2022-07-20"
+          },
+          {
+            "id": 4,
+            "name": "Renewal Term",
+            "nameValue": "1 Month"
+          },
+          {
+            "id": 5,
+            "name": "Renewal Term End",
+            "nameValue": "2022-07-20"
+          }
+        ]
+      }
+    ],
+    "invoice": [
+      {
+        "id": 1,
+        "amount": "$256",
+        "billDate": "27 Jan 2022",
+        "bill_status": "Pending",
+        "bill_number": "237362526788"
+      },
+      {
+        "id": 2,
+        "amount": "$234",
+        "billDate": "26 Jan 2022",
+        "bill_status": "paid",
+        "bill_number": "12345567890"
+      },
+      {
+        "id": 3,
+        "amount": "$45",
+        "billDate": "25 Jan 2022",
+        "bill_status": "UnPaid",
+        "bill_number": "6206416452"
+      },
+      {
+        "id": 4,
+        "amount": "$89",
+        "billDate": "24 Jan 2022",
+        "bill_status": "Success",
+        "bill_number": "7488775795"
+      },
+      {
+        "id": 5,
+        "amount": "$234",
+        "billDate": "23 Jan 2022",
+        "bill_status": "Pending",
+        "bill_number": "9123492764"
+      },
+      {
+        "id": 6,
+        "amount": "$987",
+        "billDate": "22 Jan 2022",
+        "bill_status": "Hold",
+        "bill_number": "9801443430"
+      },
+      {
+        "id": 7,
+        "amount": "$123",
+        "billDate": "21 Jan 2022",
+        "bill_status": "Processing",
+        "bill_number": "7352200392"
+      },
+      {
+        "id": 8,
+        "amount": "$432",
+        "billDate": "20 Jan 2022",
+        "bill_status": "Success",
+        "bill_number": "7050725092"
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "subscription_id": "12345",
+    "validFrom": "2024-06-15",
+    "expireOn": "2025-10-12",
+    "status": "In Progress",
+    "amount": 750.0,
+    "name": "Printer as Service - Platinum Package",
+    "details": [
+      {
+        "id": 1,
+        "subscription_id": "12345",
+        "title": "SUBSCRIPTION DETAILS",
+        "name": "Printer as Service - Platinum Package",
+        "billDetails": [
+          {
+            "id": 1,
+            "name": "Billing Cycle",
+            "nameValue": "Quarterly"
+          },
+          {
+            "id": 2,
+            "name": "Next Scheduled Billing Date",
+            "nameValue": "2024-09-15"
+          },
+          {
+            "id": 3,
+            "name": "Billing Cycle Reference Date",
+            "nameValue": "2024-03-15"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "SUBSCRIPTION TERM",
+        "billDetails": [
+          {
+            "id": 1,
+            "name": "Minimum Term",
+            "nameValue": "6 Months"
+          },
+          {
+            "id": 2,
+            "name": "Minimum Term Start",
+            "nameValue": "2024-03-15"
+          },
+          {
+            "id": 3,
+            "name": "Minimum Term End",
+            "nameValue": "2024-09-15"
+          },
+          {
+            "id": 4,
+            "name": "Renewal Term",
+            "nameValue": "6 Months"
+          },
+          {
+            "id": 5,
+            "name": "Renewal Term End",
+            "nameValue": "2024-09-15"
+          }
+        ]
+      }
+    ],
+    "invoice": [
+      {
+        "id": 1,
+        "amount": "$256",
+        "billDate": "27 Jan 2022",
+        "bill_status": "Pending",
+        "bill_number": "237362526788"
+      },
+      {
+        "id": 2,
+        "amount": "$234",
+        "billDate": "26 Jan 2022",
+        "bill_status": "paid",
+        "bill_number": "12345567890"
+      },
+      {
+        "id": 3,
+        "amount": "$45",
+        "billDate": "25 Jan 2022",
+        "bill_status": "UnPaid",
+        "bill_number": "6206416452"
+      },
+      {
+        "id": 4,
+        "amount": "$89",
+        "billDate": "24 Jan 2022",
+        "bill_status": "Success",
+        "bill_number": "7488775795"
+      },
+      {
+        "id": 5,
+        "amount": "$234",
+        "billDate": "23 Jan 2022",
+        "bill_status": "Pending",
+        "bill_number": "9123492764"
+      },
+      {
+        "id": 6,
+        "amount": "$987",
+        "billDate": "22 Jan 2022",
+        "bill_status": "Hold",
+        "bill_number": "9801443430"
+      },
+      {
+        "id": 7,
+        "amount": "$123",
+        "billDate": "21 Jan 2022",
+        "bill_status": "Processing",
+        "bill_number": "7352200392"
+      },
+      {
+        "id": 8,
+        "amount": "$432",
+        "billDate": "20 Jan 2022",
+        "bill_status": "Success",
+        "bill_number": "7050725092"
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "subscription_id": "67890",
+    "validFrom": "2024-11-01",
+    "expireOn": "2025-05-23",
+    "status": "Over Due",
+    "amount": 800.0,
+    "name": "Printer as Service - Premium Package",
+    "details": [
+      {
+        "id": 1,
+        "subscription_id": "67890",
+        "title": "SUBSCRIPTION DETAILS",
+        "name": "Printer as Service - Premium Package",
+        "billDetails": [
+          {
+            "id": 1,
+            "name": "Billing Cycle",
+            "nameValue": "Annually"
+          },
+          {
+            "id": 2,
+            "name": "Next Scheduled Billing Date",
+            "nameValue": "2025-04-15"
+          },
+          {
+            "id": 3,
+            "name": "Billing Cycle Reference Date",
+            "nameValue": "2024-11-01"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "SUBSCRIPTION TERM",
+        "billDetails": [
+          {
+            "id": 1,
+            "name": "Minimum Term",
+            "nameValue": "12 Months"
+          },
+          {
+            "id": 2,
+            "name": "Minimum Term Start",
+            "nameValue": "2024-11-01"
+          },
+          {
+            "id": 3,
+            "name": "Minimum Term End",
+            "nameValue": "2025-10-31"
+          },
+          {
+            "id": 4,
+            "name": "Renewal Term",
+            "nameValue": "12 Months"
+          },
+          {
+            "id": 5,
+            "name": "Renewal Term End",
+            "nameValue": "2025-10-31"
+          }
+        ]
+      }
+    ],
+    "invoice": [
+      {
+        "id": 1,
+        "amount": "$256",
+        "billDate": "27 Jan 2022",
+        "bill_status": "Pending",
+        "bill_number": "237362526788"
+      },
+      {
+        "id": 2,
+        "amount": "$234",
+        "billDate": "26 Jan 2022",
+        "bill_status": "paid",
+        "bill_number": "12345567890"
+      },
+      {
+        "id": 3,
+        "amount": "$45",
+        "billDate": "25 Jan 2022",
+        "bill_status": "UnPaid",
+        "bill_number": "6206416452"
+      },
+      {
+        "id": 4,
+        "amount": "$89",
+        "billDate": "24 Jan 2022",
+        "bill_status": "Success",
+        "bill_number": "7488775795"
+      },
+      {
+        "id": 5,
+        "amount": "$234",
+        "billDate": "23 Jan 2022",
+        "bill_status": "Pending",
+        "bill_number": "9123492764"
+      },
+      {
+        "id": 6,
+        "amount": "$987",
+        "billDate": "22 Jan 2022",
+        "bill_status": "Hold",
+        "bill_number": "9801443430"
+      },
+      {
+        "id": 7,
+        "amount": "$123",
+        "billDate": "21 Jan 2022",
+        "bill_status": "Processing",
+        "bill_number": "7352200392"
+      },
+      {
+        "id": 8,
+        "amount": "$432",
+        "billDate": "20 Jan 2022",
+        "bill_status": "Success",
+        "bill_number": "7050725092"
+      }
+    ]
+  },
+  {
+    "id": 103,
+    "subscription_id": "34567",
+    "validFrom": "2025-01-15",
+    "expireOn": "2025-07-12",
+    "status": "In Progress",
+    "amount": 950.0,
+    "name": "Printer as Service - Enterprise Package",
+    "details": [
+      {
+        "id": 1,
+        "subscription_id": "34567",
+        "title": "SUBSCRIPTION DETAILS",
+        "name": "Printer as Service - Enterprise Package",
+        "billDetails": [
+          {
+            "id": 1,
+            "name": "Billing Cycle",
+            "nameValue": "Semi-Annually"
+          },
+          {
+            "id": 2,
+            "name": "Next Scheduled Billing Date",
+            "nameValue": "2025-06-15"
+          },
+          {
+            "id": 3,
+            "name": "Billing Cycle Reference Date",
+            "nameValue": "2025-01-15"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "SUBSCRIPTION TERM",
+        "billDetails": [
+          {
+            "id": 1,
+            "name": "Minimum Term",
+            "nameValue": "18 Months"
+          },
+          {
+            "id": 2,
+            "name": "Minimum Term Start",
+            "nameValue": "2025-01-15"
+          },
+          {
+            "id": 3,
+            "name": "Minimum Term End",
+            "nameValue": "2026-07-15"
+          },
+          {
+            "id": 4,
+            "name": "Renewal Term",
+            "nameValue": "18 Months"
+          },
+          {
+            "id": 5,
+            "name": "Renewal Term End",
+            "nameValue": "2026-07-15"
+          }
+        ]
+      }
+    ],
+    "invoice": [
+      {
+        "id": 1,
+        "amount": "$256",
+        "billDate": "27 Jan 2022",
+        "bill_status": "Pending",
+        "bill_number": "237362526788"
+      },
+      {
+        "id": 2,
+        "amount": "$234",
+        "billDate": "26 Jan 2022",
+        "bill_status": "paid",
+        "bill_number": "12345567890"
+      },
+      {
+        "id": 3,
+        "amount": "$45",
+        "billDate": "25 Jan 2022",
+        "bill_status": "UnPaid",
+        "bill_number": "6206416452"
+      },
+      {
+        "id": 4,
+        "amount": "$89",
+        "billDate": "24 Jan 2022",
+        "bill_status": "Success",
+        "bill_number": "7488775795"
+      },
+      {
+        "id": 5,
+        "amount": "$234",
+        "billDate": "23 Jan 2022",
+        "bill_status": "Pending",
+        "bill_number": "9123492764"
+      },
+      {
+        "id": 6,
+        "amount": "$987",
+        "billDate": "22 Jan 2022",
+        "bill_status": "Hold",
+        "bill_number": "9801443430"
+      },
+      {
+        "id": 7,
+        "amount": "$123",
+        "billDate": "21 Jan 2022",
+        "bill_status": "Processing",
+        "bill_number": "7352200392"
+      },
+      {
+        "id": 8,
+        "amount": "$432",
+        "billDate": "20 Jan 2022",
+        "bill_status": "Success",
+        "bill_number": "7050725092"
+      }
+    ]
+  },
+  {
+    "id": 104,
+    "subscription_id": "24680",
+    "validFrom": "2025-04-01",
+    "expireOn": "2025-08-23",
+    "status": "In Progress",
+    "amount": 680.0,
+    "name": "Printer as Service - Silver Package",
+    "details": [
+      {
+        "id": 1,
+        "subscription_id": "24680",
+        "title": "SUBSCRIPTION DETAILS",
+        "name": "Printer as Service - Silver Package",
+        "billDetails": [
+          {
+            "id": 1,
+            "name": "Billing Cycle",
+            "nameValue": "Semi-Monthly"
+          },
+          {
+            "id": 2,
+            "name": "Next Scheduled Billing Date",
+            "nameValue": "2025-06-15"
+          },
+          {
+            "id": 3,
+            "name": "Billing Cycle Reference Date",
+            "nameValue": "2025-04-01"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "SUBSCRIPTION TERM",
+        "billDetails": [
+          {
+            "id": 1,
+            "name": "Minimum Term",
+            "nameValue": "9 Months"
+          },
+          {
+            "id": 2,
+            "name": "Minimum Term Start",
+            "nameValue": "2025-04-01"
+          },
+          {
+            "id": 3,
+            "name": "Minimum Term End",
+            "nameValue": "2025-12-31"
+          },
+          {
+            "id": 4,
+            "name": "Renewal Term",
+            "nameValue": "9 Months"
+          },
+          {
+            "id": 5,
+            "name": "Renewal Term End",
+            "nameValue": "2025-12-31"
+          }
+        ]
+      }
+    ],
+    "invoice": [
+      {
+        "id": 1,
+        "amount": "$256",
+        "billDate": "27 Jan 2022",
+        "bill_status": "Pending",
+        "bill_number": "237362526788"
+      },
+      {
+        "id": 2,
+        "amount": "$234",
+        "billDate": "26 Jan 2022",
+        "bill_status": "paid",
+        "bill_number": "12345567890"
+      },
+      {
+        "id": 3,
+        "amount": "$45",
+        "billDate": "25 Jan 2022",
+        "bill_status": "UnPaid",
+        "bill_number": "6206416452"
+      },
+      {
+        "id": 4,
+        "amount": "$89",
+        "billDate": "24 Jan 2022",
+        "bill_status": "Success",
+        "bill_number": "7488775795"
+      },
+      {
+        "id": 5,
+        "amount": "$234",
+        "billDate": "23 Jan 2022",
+        "bill_status": "Pending",
+        "bill_number": "9123492764"
+      },
+      {
+        "id": 6,
+        "amount": "$987",
+        "billDate": "22 Jan 2022",
+        "bill_status": "Hold",
+        "bill_number": "9801443430"
+      },
+      {
+        "id": 7,
+        "amount": "$123",
+        "billDate": "21 Jan 2022",
+        "bill_status": "Processing",
+        "bill_number": "7352200392"
+      },
+      {
+        "id": 8,
+        "amount": "$432",
+        "billDate": "20 Jan 2022",
+        "bill_status": "Success",
+        "bill_number": "7050725092"
+      }
+    ]
+  }
+]

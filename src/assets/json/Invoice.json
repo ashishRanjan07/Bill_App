@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "amount": "$256",
+    "billDate": "27 Jan 2022",
+    "bill_status": "Pending",
+    "bill_number": "237362526788"
+  },
+  {
+    "id": 2,
+    "amount": "$234",
+    "billDate": "26 Jan 2022",
+    "bill_status": "paid",
+    "bill_number": "12345567890"
+  },
+  {
+    "id": 3,
+    "amount": "$45",
+    "billDate": "25 Jan 2022",
+    "bill_status": "UnPaid",
+    "bill_number": "6206416452"
+  },
+  {
+    "id": 4,
+    "amount": "$89",
+    "billDate": "24 Jan 2022",
+    "bill_status": "Success",
+    "bill_number": "7488775795"
+  },
+  {
+    "id": 5,
+    "amount": "$234",
+    "billDate": "23 Jan 2022",
+    "bill_status": "Pending",
+    "bill_number": "9123492764"
+  },
+  {
+    "id": 6,
+    "amount": "$987",
+    "billDate": "22 Jan 2022",
+    "bill_status": "Hold",
+    "bill_number": "9801443430"
+  },
+  {
+    "id": 7,
+    "amount": "$123",
+    "billDate": "21 Jan 2022",
+    "bill_status": "Processing",
+    "bill_number": "7352200392"
+  },
+  {
+    "id": 8,
+    "amount": "$432",
+    "billDate": "20 Jan 2022",
+    "bill_status": "Success",
+    "bill_number": "7050725092"
+  }
+]
