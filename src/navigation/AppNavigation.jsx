@@ -15,6 +15,9 @@ import ViewDetails from '../screen/app/ViewDetails';
 import PayOutStanding from '../screen/app/PayOutStanding';
 import MySubscription from '../screen/app/Features/MySubscription';
 import MySubscriptionDetails from '../screen/app/Features/MySubscriptionDetails';
+import ScanCode from '../screen/app/swap/ScanCode';
+import BuySubscription from '../screen/app/buySubscription/BuySubscription';
+import BuySubscriptionDetails from '../screen/app/buySubscription/BuySubscriptionDetails';
 
 const Stack = createStackNavigator();
 const AppNavigation = () => {
@@ -25,13 +28,15 @@ const AppNavigation = () => {
       <Stack.Screen name="View Details" component={ViewDetails} />
       <Stack.Screen name="Pay Outstanding" component={PayOutStanding} />
       <Stack.Screen name="My Subscription" component={MySubscription} />
-      <Stack.Screen name="My Subscription Details" component={MySubscriptionDetails} />
-    
-
+      <Stack.Screen
+        name="My Subscription Details"
+        component={MySubscriptionDetails}
+      />
+      <Stack.Screen name="Scan Code" component={ScanCode} />
+      <Stack.Screen name="Buy Subscription" component={BuySubscription} />
+      <Stack.Screen name="Buy Subscription Details" component={BuySubscriptionDetails} />
     </Stack.Navigator>
   );
 };
 
 export default AppNavigation;
-
-

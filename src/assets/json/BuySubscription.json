@@ -1,0 +1,171 @@
+{
+  "subscriptionBundles": [
+    {
+      "id": "sub_001",
+      "name": "Basic Plan",
+      "price": 9.99,
+      "currency": "USD",
+      "validity": "30 days",
+      "item_type": "subscription",
+      "description": "Access to all basic features for 30 days.",
+      "image": "https://example.com/images/basic-plan.png",
+      "features": [
+        "Unlimited access to basic articles",
+        "Ad-free experience",
+        "Email support"
+      ],
+      "productName":"Printer Maintenance",
+      "isPopular": false,
+      "autoRenew": true,
+      "created_at": "2024-10-25T08:00:00Z",
+      "updated_at": "2024-10-25T08:00:00Z",
+      "details": [
+        {
+          "id": 1,
+          "title": "1 Months",
+          "subscriptionDetails": {
+            "amount": "30",
+            "startDate": "Feb 22, 2022",
+            "endDate": "May 22, 2022",
+            "market": "Indian Market",
+            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+          }
+        },
+        {
+          "id": 2,
+          "title": "3 Months",
+          "subscriptionDetails": {
+            "amount": "90",
+            "startDate": "Feb 22, 2023",
+            "endDate": "May 22, 2023",
+            "market": "Indian Market",
+            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+          }
+        },
+        {
+          "id": 3,
+          "title": "6 Months",
+          "subscriptionDetails": {
+            "amount": "180",
+            "startDate": "Feb 22, 2024",
+            "endDate": "May 22, 2024",
+            "market": "Indian Market",
+            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub_002",
+      "name": "Premium Plan",
+      "price": 19.99,
+      "currency": "USD",
+      "productName":"Printer Maintenance2",
+      "validity": "30 days",
+      "item_type": "subscription",
+      "description": "Enjoy all premium features with enhanced support and priority access.",
+      "image": "https://example.com/images/premium-plan.png",
+      "features": [
+        "Unlimited access to all content",
+        "Priority customer support",
+        "Exclusive webinars",
+        "Early access to new features"
+      ],
+      "isPopular": true,
+      "autoRenew": true,
+      "created_at": "2024-10-25T08:00:00Z",
+      "updated_at": "2024-10-25T08:00:00Z",
+      "details": [
+        {
+          "id": 1,
+          "title": "1 Months",
+          "subscriptionDetails": {
+            "amount": "30",
+            "startDate": "Feb 22, 2022",
+            "endDate": "May 22, 2022",
+            "market": "Indian Market",
+            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+          }
+        },
+        {
+          "id": 2,
+          "title": "3 Months",
+          "subscriptionDetails": {
+            "amount": "90",
+            "startDate": "Feb 22, 2023",
+            "endDate": "May 22, 2023",
+            "market": "Indian Market",
+            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+          }
+        },
+        {
+          "id": 3,
+          "title": "6 Months",
+          "subscriptionDetails": {
+            "amount": "180",
+            "startDate": "Feb 22, 2024",
+            "endDate": "May 22, 2024",
+            "market": "Indian Market",
+            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub_003",
+      "name": "Annual Plan",
+      "price": 199.99,
+      "currency": "USD",
+      "validity": "365 days",
+      "productName":"Printer Maintenance3",
+      "item_type": "subscription",
+      "description": "Year-long access to all premium features at a discounted rate.",
+      "image": "https://example.com/images/annual-plan.png",
+      "features": [
+        "Full access to content library",
+        "Priority support",
+        "Discounted rate compared to monthly",
+        "One free personalized consultation"
+      ],
+      "isPopular": true,
+      "autoRenew": true,
+      "created_at": "2024-10-25T08:00:00Z",
+      "updated_at": "2024-10-25T08:00:00Z",
+      "details": [
+        {
+          "id": 1,
+          "title": "1 Months",
+          "subscriptionDetails": {
+            "amount": "30",
+            "startDate": "Feb 22, 2022",
+            "endDate": "May 22, 2022",
+            "market": "Indian Market",
+            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+          }
+        },
+        {
+          "id": 2,
+          "title": "3 Months",
+          "subscriptionDetails": {
+            "amount": "90",
+            "startDate": "Feb 22, 2023",
+            "endDate": "May 22, 2023",
+            "market": "Indian Market",
+            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+          }
+        },
+        {
+          "id": 3,
+          "title": "6 Months",
+          "subscriptionDetails": {
+            "amount": "180",
+            "startDate": "Feb 22, 2024",
+            "endDate": "May 22, 2024",
+            "market": "Indian Market",
+            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+          }
+        }
+      ]
+    }
+  ]
+}

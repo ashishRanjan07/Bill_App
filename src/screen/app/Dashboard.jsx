@@ -110,7 +110,7 @@ const Dashboard = () => {
             <BoxItem
               name="Buy Subscription"
               image={'subtitles'}
-              handleAction={() => console.log('Clicked')}
+              handleAction={() => navigation.navigate('Buy Subscription')}
             />
             <BoxItem
               name="Payment History"
