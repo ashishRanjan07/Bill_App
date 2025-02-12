@@ -1,0 +1,232 @@
+[
+  {
+    "id": 1,
+    "bill_number": 1,
+    "subscription_id": 1,
+    "start_date": "2/25/2024",
+    "end_date": "7/26/2024",
+    "quantity": 1,
+    "amount": 8132.28,
+    "bill_status": "closed"
+  },
+  {
+    "id": 2,
+    "bill_number": 2,
+    "subscription_id": 2,
+    "start_date": "11/25/2023",
+    "end_date": "9/22/2024",
+    "quantity": 2,
+    "amount": 2899.25,
+    "bill_status": "process"
+  },
+  {
+    "id": 3,
+    "bill_number": 3,
+    "subscription_id": 3,
+    "start_date": "5/3/2024",
+    "end_date": "5/17/2024",
+    "quantity": 3,
+    "amount": 5601.63,
+    "bill_status": "closed"
+  },
+  {
+    "id": 4,
+    "bill_number": 4,
+    "subscription_id": 4,
+    "start_date": "11/15/2023",
+    "end_date": "9/28/2024",
+    "quantity": 4,
+    "amount": 4292.2,
+    "bill_status": "closed"
+  },
+  {
+    "id": 5,
+    "bill_number": 5,
+    "subscription_id": 5,
+    "start_date": "6/11/2024",
+    "end_date": "10/4/2024",
+    "quantity": 5,
+    "amount": 7509.69,
+    "bill_status": "pending"
+  },
+  {
+    "id": 6,
+    "bill_number": 6,
+    "subscription_id": 6,
+    "start_date": "1/12/2024",
+    "end_date": "8/7/2024",
+    "quantity": 6,
+    "amount": 7323.94,
+    "bill_status": "closed"
+  },
+  {
+    "id": 7,
+    "bill_number": 7,
+    "subscription_id": 7,
+    "start_date": "5/20/2024",
+    "end_date": "7/28/2024",
+    "quantity": 7,
+    "amount": 8239.57,
+    "bill_status": "process"
+  },
+  {
+    "id": 8,
+    "bill_number": 8,
+    "subscription_id": 8,
+    "start_date": "4/1/2024",
+    "end_date": "3/21/2024",
+    "quantity": 8,
+    "amount": 5250.81,
+    "bill_status": "process"
+  },
+  {
+    "id": 9,
+    "bill_number": 9,
+    "subscription_id": 9,
+    "start_date": "2/1/2024",
+    "end_date": "12/14/2023",
+    "quantity": 9,
+    "amount": 2379.76,
+    "bill_status": "closed"
+  },
+  {
+    "id": 10,
+    "bill_number": 10,
+    "subscription_id": 10,
+    "start_date": "10/6/2024",
+    "end_date": "3/16/2024",
+    "quantity": 10,
+    "amount": 4205.66,
+    "bill_status": "pending"
+  },
+  {
+    "id": 11,
+    "bill_number": 11,
+    "subscription_id": 11,
+    "start_date": "11/13/2023",
+    "end_date": "11/28/2023",
+    "quantity": 11,
+    "amount": 3766.24,
+    "bill_status": "closed"
+  },
+  {
+    "id": 12,
+    "bill_number": 12,
+    "subscription_id": 12,
+    "start_date": "9/21/2024",
+    "end_date": "10/31/2024",
+    "quantity": 12,
+    "amount": 2484.42,
+    "bill_status": "closed"
+  },
+  {
+    "id": 13,
+    "bill_number": 13,
+    "subscription_id": 13,
+    "start_date": "3/21/2024",
+    "end_date": "8/4/2024",
+    "quantity": 13,
+    "amount": 6041.98,
+    "bill_status": "process"
+  },
+  {
+    "id": 14,
+    "bill_number": 14,
+    "subscription_id": 14,
+    "start_date": "11/7/2024",
+    "end_date": "10/4/2024",
+    "quantity": 14,
+    "amount": 3656.66,
+    "bill_status": "process"
+  },
+  {
+    "id": 15,
+    "bill_number": 15,
+    "subscription_id": 15,
+    "start_date": "1/20/2024",
+    "end_date": "11/2/2024",
+    "quantity": 15,
+    "amount": 7762.98,
+    "bill_status": "closed"
+  },
+  {
+    "id": 16,
+    "bill_number": 16,
+    "subscription_id": 16,
+    "start_date": "10/16/2024",
+    "end_date": "5/24/2024",
+    "quantity": 16,
+    "amount": 1256.3,
+    "bill_status": "process"
+  },
+  {
+    "id": 17,
+    "bill_number": 17,
+    "subscription_id": 17,
+    "start_date": "8/26/2024",
+    "end_date": "12/1/2023",
+    "quantity": 17,
+    "amount": 5240.37,
+    "bill_status": "pending"
+  },
+  {
+    "id": 18,
+    "bill_number": 18,
+    "subscription_id": 18,
+    "start_date": "4/21/2024",
+    "end_date": "11/26/2023",
+    "quantity": 18,
+    "amount": 8783.73,
+    "bill_status": "closed"
+  },
+  {
+    "id": 19,
+    "bill_number": 19,
+    "subscription_id": 19,
+    "start_date": "3/18/2024",
+    "end_date": "1/10/2024",
+    "quantity": 19,
+    "amount": 5628.37,
+    "bill_status": "process"
+  },
+  {
+    "id": 20,
+    "bill_number": 20,
+    "subscription_id": 20,
+    "start_date": "5/10/2024",
+    "end_date": "3/25/2024",
+    "quantity": 20,
+    "amount": 3709.02,
+    "bill_status": "closed"
+  },
+  {
+    "id": 21,
+    "bill_number": 21,
+    "subscription_id": 21,
+    "start_date": "9/24/2024",
+    "end_date": "4/4/2024",
+    "quantity": 21,
+    "amount": 2907.5,
+    "bill_status": "process"
+  },
+  {
+    "id": 22,
+    "bill_number": 22,
+    "subscription_id": 22,
+    "start_date": "5/29/2024",
+    "end_date": "11/9/2024",
+    "quantity": 22,
+    "amount": 574.82,
+    "bill_status": "closed"
+  },
+  {
+    "id": 23,
+    "bill_number": 23,
+    "subscription_id": 23,
+    "start_date": "3/29/2024",
+    "end_date": "3/24/2024",
+    "quantity": 23,
+    "amount": 5905.55,
+    "bill_status": "process"
+  }
+]

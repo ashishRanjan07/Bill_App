@@ -5,44 +5,48 @@ import {
   Text,
   TouchableOpacity,
   View,
-} from 'react-native';
-import React, {useState} from 'react';
-import Colors from '../../../utils/AppColor';
+} from "react-native";
+import React, { useState } from "react";
+import Colors from "../../../utils/AppColor";
 import {
   moderateScale,
   moderateScaleVertical,
   textScale,
-} from '../../../utils/ResponsiveSize';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import Feather from 'react-native-vector-icons/Feather';
-import {ImagePath} from '../../../utils/ImagePath';
-import {Image} from 'react-native';
-import FontFamily from '../../../utils/FontFamily';
+} from "../../../utils/ResponsiveSize";
+import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
+import Feather from "react-native-vector-icons/Feather";
+import { ImagePath } from "../../../utils/ImagePath";
+import { Image } from "react-native";
+import FontFamily from "../../../utils/FontFamily";
+import CustomButton from "../../../components/CustomButton";
+import { useNavigation } from "@react-navigation/native";
 
-const MySubscriptionInvoiceTab = ({route}) => {
+const MySubscriptionInvoiceTab = ({ route }) => {
+  const navigation = useNavigation();
   const invoice = route.params;
   const [selected, setSelected] = useState();
   const [expand, setExpand] = useState();
-  const handleSelection = detail => {
+  const handleSelection = (detail) => {
     setSelected(detail);
   };
-  const handleShowDetails = detail => {
+  const handleShowDetails = (detail) => {
     setExpand(detail);
   };
   return (
     <ScrollView style={styles.main} showsVerticalScrollIndicator={false}>
-      {Object.keys(invoice).map(key => {
+      {Object.keys(invoice).map((key) => {
         const detail = invoice[key];
         return (
           <View style={styles.contentHolder}>
             <TouchableOpacity
               onPress={() => handleSelection(detail)}
-              style={styles.checkBoxHolder}>
+              style={styles.checkBoxHolder}
+            >
               <MaterialCommunityIcons
                 name={
                   selected?.id === detail?.id
-                    ? 'checkbox-outline'
-                    : 'checkbox-blank-outline'
+                    ? "checkbox-outline"
+                    : "checkbox-blank-outline"
                 }
                 color={Colors.searchTextColor}
                 size={textScale(25)}
@@ -50,12 +54,14 @@ const MySubscriptionInvoiceTab = ({route}) => {
             </TouchableOpacity>
             <TouchableOpacity
               onPress={() => handleShowDetails(detail)}
-              style={styles.detailHolder}>
+              style={styles.detailHolder}
+            >
               <View style={styles.innerDetailsHolder}>
                 <ImageBackground
                   source={ImagePath.smallBack}
                   resizeMode="contain"
-                  style={styles.backgroundImageStyle}>
+                  style={styles.backgroundImageStyle}
+                >
                   <Image
                     source={ImagePath.printer}
                     resizeMode="cover"
@@ -83,12 +89,20 @@ const MySubscriptionInvoiceTab = ({route}) => {
                       <Text style={styles.text}>{detail?.bill_number}</Text>
                     </View>
                   )}
+                  {expand?.id === detail?.id && (
+                    <CustomButton
+                      name={"View Bill Details"}
+                      handleAction={() =>
+                        navigation.navigate("View Bill Details")
+                      }
+                    />
+                  )}
                 </View>
               </View>
               <View>
                 <Feather
                   name={
-                    expand?.id === detail?.id ? 'chevron-up' : 'chevron-down'
+                    expand?.id === detail?.id ? "chevron-up" : "chevron-down"
                   }
                   color={Colors.searchTextColor}
                   size={textScale(25)}
@@ -121,8 +135,8 @@ const styles = StyleSheet.create({
   },
   contentHolder: {
     borderWidth: moderateScale(1),
-    width: '95%',
-    alignSelf: 'center',
+    width: "95%",
+    alignSelf: "center",
     marginTop: moderateScaleVertical(10),
     backgroundColor: Colors.white,
     borderColor: Colors.borderColor2,
@@ -136,43 +150,43 @@ const styles = StyleSheet.create({
       width: 0,
       height: moderateScale(2),
     },
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     gap: moderateScale(10),
   },
   checkBoxHolder: {
-    width: '10%',
-    alignItems: 'center',
+    width: "10%",
+    alignItems: "center",
   },
   detailHolder: {
-    width: '85%',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    width: "85%",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
   },
   innerDetailsHolder: {
-    width: '80%',
-    flexDirection: 'row',
+    width: "80%",
+    flexDirection: "row",
     gap: moderateScale(5),
   },
   backgroundImageStyle: {
     height: moderateScale(70),
     width: moderateScale(70),
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
   innerImageStyle: {
     width: moderateScale(30),
     height: moderateScale(32),
   },
   descriptionHolder: {
-    width: '70%',
+    width: "70%",
     paddingVertical: moderateScaleVertical(10),
     gap: moderateScaleVertical(10),
   },
   textHolder: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
   },
 });

@@ -7,21 +7,23 @@ import {
   Text,
   TouchableOpacity,
   View,
-} from 'react-native';
-import React from 'react';
-import Colors from '../../utils/AppColor';
-import InternalHeader from '../../components/InternalHeader';
+} from "react-native";
+import React from "react";
+import Colors from "../../utils/AppColor";
+import InternalHeader from "../../components/InternalHeader";
 import {
   moderateScale,
   moderateScaleVertical,
   textScale,
-} from '../../utils/ResponsiveSize';
-import FontFamily from '../../utils/FontFamily';
-import Data from '../../assets/json/ViewDetails.json';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+} from "../../utils/ResponsiveSize";
+import FontFamily from "../../utils/FontFamily";
+import Data from "../../assets/json/ViewDetails.json";
+import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
+import { useNavigation } from "@react-navigation/native";
 
 const ViewDetails = () => {
-  const renderItem = ({item}) => {
+  const navigation = useNavigation();
+  const renderItem = ({ item }) => {
     return (
       <View style={styles.itemHolder}>
         <TouchableOpacity style={styles.topView}>
@@ -31,7 +33,10 @@ const ViewDetails = () => {
             color={Colors.black}
           />
         </TouchableOpacity>
-        <TouchableOpacity style={styles.contentHolder}>
+        <TouchableOpacity
+          style={styles.contentHolder}
+          onPress={() => navigation.navigate("View Bill Details")}
+        >
           <View style={styles.subIdHolder}>
             <Text style={styles.text}>Sub. ID</Text>
             <Text style={styles.text2}>{item?.subId}</Text>
@@ -46,7 +51,7 @@ const ViewDetails = () => {
               <Text style={styles.amountText}>{item?.date}</Text>
             </View>
           </View>
-          <View style={{width: '10%', alignItems: 'center'}}>
+          <View style={{ width: "10%", alignItems: "center" }}>
             <MaterialCommunityIcons
               name="chevron-down"
               color={Colors.black}
@@ -59,34 +64,36 @@ const ViewDetails = () => {
   };
   return (
     <View style={styles.main}>
-      <SafeAreaView style={{backgroundColor: Colors.background}} />
+      <SafeAreaView style={{ backgroundColor: Colors.background }} />
       <StatusBar
         backgroundColor={Colors.background}
-        barStyle={'dark-content'}
+        barStyle={"dark-content"}
       />
-      <InternalHeader title={'View Details'} />
+      <InternalHeader title={"View Details"} />
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.upperDesignView} />
         <View
           style={{
             marginVertical: moderateScaleVertical(30),
-            width: '95%',
-            alignSelf: 'center',
-          }}>
+            width: "95%",
+            alignSelf: "center",
+          }}
+        >
           <TouchableOpacity style={styles.selectHolder}>
             <Text
               style={{
                 fontFamily: FontFamily.Roboto_Medium,
                 fontSize: textScale(14),
                 color: Colors.statusBarColor,
-              }}>
+              }}
+            >
               Select All
             </Text>
           </TouchableOpacity>
           <FlatList
             data={Data}
             renderItem={renderItem}
-            keyExtractor={item => item.id}
+            keyExtractor={(item) => item.id}
             showsVerticalScrollIndicator={false}
           />
         </View>
@@ -103,27 +110,27 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.background,
   },
   upperDesignView: {
-    position: 'absolute',
-    width: '100%',
+    position: "absolute",
+    width: "100%",
     height: moderateScale(150),
     backgroundColor: Colors.white,
     borderBottomEndRadius: moderateScale(100),
     borderBottomStartRadius: moderateScale(100),
   },
   selectHolder: {
-    flexDirection: 'row',
-    justifyContent: 'flex-end',
-    alignItems: 'center',
-    width: '30%',
-    alignSelf: 'flex-end',
+    flexDirection: "row",
+    justifyContent: "flex-end",
+    alignItems: "center",
+    width: "30%",
+    alignSelf: "flex-end",
     padding: moderateScale(10),
   },
   itemHolder: {
-    width: '100%',
+    width: "100%",
     marginVertical: moderateScaleVertical(5),
     padding: moderateScale(10),
-    alignItems: 'center',
-    flexDirection: 'row',
+    alignItems: "center",
+    flexDirection: "row",
     height: moderateScale(75),
   },
   text: {
@@ -138,13 +145,13 @@ const styles = StyleSheet.create({
   },
   subIdHolder: {
     borderWidth: 2,
-    width: '25%',
+    width: "25%",
     height: moderateScale(70),
     borderRadius: moderateScale(5),
     borderColor: Colors.boxColor,
     backgroundColor: Colors.boxColor,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
     gap: moderateScale(3),
   },
   amountText: {
@@ -158,26 +165,26 @@ const styles = StyleSheet.create({
     color: Colors.amountTextColor,
   },
   topView: {
-    width: '15%',
-    alignItems: 'center',
+    width: "15%",
+    alignItems: "center",
   },
   contentHolder: {
-    width: '85%',
-    flexDirection: 'row',
-    alignItems: 'center',
+    width: "85%",
+    flexDirection: "row",
+    alignItems: "center",
     gap: moderateScale(10),
     backgroundColor: Colors.white,
     borderRadius: moderateScale(10),
-    overflow: 'hidden',
+    overflow: "hidden",
     elevation: moderateScale(5),
   },
   descriptionView: {
-    width: '55%',
+    width: "55%",
     gap: moderateScale(10),
   },
   detailsTextHolder: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
   },
 });

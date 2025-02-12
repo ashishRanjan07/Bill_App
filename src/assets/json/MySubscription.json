@@ -6,6 +6,7 @@
     "expireOn": "2025-01-23",
     "status": "Over Due",
     "amount": 520.0,
+    "autoRenew": true,
     "name": "Printer as Service - Gold Package",
     "details": [
       {
@@ -129,6 +130,7 @@
     "expireOn": "2025-10-12",
     "status": "In Progress",
     "amount": 750.0,
+     "autoRenew": false,
     "name": "Printer as Service - Platinum Package",
     "details": [
       {
@@ -252,6 +254,7 @@
     "expireOn": "2025-05-23",
     "status": "Over Due",
     "amount": 800.0,
+    "autoRenew": false,
     "name": "Printer as Service - Premium Package",
     "details": [
       {
@@ -375,6 +378,7 @@
     "expireOn": "2025-07-12",
     "status": "In Progress",
     "amount": 950.0,
+    "autoRenew": false,
     "name": "Printer as Service - Enterprise Package",
     "details": [
       {
@@ -498,6 +502,7 @@
     "expireOn": "2025-08-23",
     "status": "In Progress",
     "amount": 680.0,
+    "autoRenew": true,
     "name": "Printer as Service - Silver Package",
     "details": [
       {

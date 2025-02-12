@@ -31,9 +31,9 @@ export default CustomSearch;
 
 const styles = StyleSheet.create({
   main: {
-    borderWidth: 2,
+    borderWidth: 1,
     borderRadius: moderateScale(5),
-    borderColor: Colors.borderColor2,
+    borderColor: Colors.white,
     backgroundColor: Colors.white,
     height: moderateScale(45),
     paddingHorizontal: moderateScale(10),

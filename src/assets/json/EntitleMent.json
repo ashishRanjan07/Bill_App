@@ -1,0 +1,194 @@
+{
+  "entitlements": [
+    {
+      "entitlement_number": 1001,
+      "offering": "Printer Services",
+      "valid_from": "10/10/2020",
+      "valid_to": "12/12/2024",
+      "status": "active",
+      "details": {
+        "product_offering": "Printer Offering",
+        "quantity": 10,
+        "organizational_document_no": "1002345",
+        "entitlement_modal": "Printer Gold Services",
+        "business_category": "service Care",
+        "the_right": "to get Service",
+        "date": {
+          "valid_from": "10/10/2020",
+          "valid_to": "12/12/2024"
+        }
+      },
+      "itemDetails": {
+        "itemlist": [
+          {
+            "operation": "create",
+            "businessEvent": "Printer",
+            "documentType": "Active"
+          },
+          {
+            "operation": "update",
+            "businessEvent": "Printer",
+            "documentType": "Active"
+          },
+          {
+            "operation": "delete",
+            "businessEvent": "Printer",
+            "documentType": "Inactive"
+          }
+        ]
+      }
+    },
+    {
+      "entitlement_number": 1002,
+      "offering": "Scanner Services",
+      "valid_from": "01/01/2021",
+      "valid_to": "12/12/2025",
+      "status": "inactive",
+      "details": {
+        "product_offering": "Scanner Offering",
+        "quantity": 15,
+        "organizational_document_no": "1002346",
+        "entitlement_modal": "Scanner Platinum Services",
+        "business_category": "service Care",
+        "the_right": "to get Service",
+        "date": {
+          "valid_from": "01/01/2021",
+          "valid_to": "12/12/2025"
+        }
+      },
+      "itemDetails": {
+        "itemlist": [
+          {
+            "operation": "create",
+            "businessEvent": "Scanner",
+            "documentType": "Inactive"
+          },
+          {
+            "operation": "update",
+            "businessEvent": "Scanner",
+            "documentType": "Inactive"
+          },
+          {
+            "operation": "delete",
+            "businessEvent": "Scanner",
+            "documentType": "Active"
+          }
+        ]
+      }
+    },
+    {
+      "entitlement_number": 1003,
+      "offering": "Fax Services",
+      "valid_from": "15/05/2021",
+      "valid_to": "15/05/2024",
+      "status": "Suspended",
+      "details": {
+        "product_offering": "Fax Offering",
+        "quantity": 5,
+        "organizational_document_no": "1002347",
+        "entitlement_modal": "Fax Bronze Services",
+        "business_category": "service Care",
+        "the_right": "to get Service",
+        "date": {
+          "valid_from": "15/05/2021",
+          "valid_to": "15/05/2024"
+        }
+      },
+      "itemDetails": {
+        "itemlist": [
+          {
+            "operation": "create",
+            "businessEvent": "Fax",
+            "documentType": "Suspended"
+          },
+          {
+            "operation": "update",
+            "businessEvent": "Fax",
+            "documentType": "Suspended"
+          },
+          {
+            "operation": "delete",
+            "businessEvent": "Fax",
+            "documentType": "Active"
+          }
+        ]
+      }
+    },
+    {
+      "entitlement_number": 1004,
+      "offering": "Network Services",
+      "valid_from": "20/08/2022",
+      "valid_to": "20/08/2026",
+      "status": "active",
+      "details": {
+        "product_offering": "Network Offering",
+        "quantity": 30,
+        "organizational_document_no": "1002348",
+        "entitlement_modal": "Network Premium Services",
+        "business_category": "service Care",
+        "the_right": "to get Service",
+        "date": {
+          "valid_from": "20/08/2022",
+          "valid_to": "20/08/2026"
+        }
+      },
+      "itemDetails": {
+        "itemlist": [
+          {
+            "operation": "create",
+            "businessEvent": "Network",
+            "documentType": "Active"
+          },
+          {
+            "operation": "update",
+            "businessEvent": "Network",
+            "documentType": "Active"
+          },
+          {
+            "operation": "delete",
+            "businessEvent": "Network",
+            "documentType": "Suspended"
+          }
+        ]
+      }
+    },
+    {
+      "entitlement_number": 1005,
+      "offering": "Cloud Storage Services",
+      "valid_from": "01/09/2023",
+      "valid_to": "01/09/2027",
+      "status": "inactive",
+      "details": {
+        "product_offering": "Cloud Storage Offering",
+        "quantity": 50,
+        "organizational_document_no": "1002349",
+        "entitlement_modal": "Cloud Silver Services",
+        "business_category": "service Care",
+        "the_right": "to get Service",
+        "date": {
+          "valid_from": "01/09/2023",
+          "valid_to": "01/09/2027"
+        }
+      },
+      "itemDetails": {
+        "itemlist": [
+          {
+            "operation": "create",
+            "businessEvent": "Cloud Storage",
+            "documentType": "Inactive"
+          },
+          {
+            "operation": "update",
+            "businessEvent": "Cloud Storage",
+            "documentType": "Inactive"
+          },
+          {
+            "operation": "delete",
+            "businessEvent": "Cloud Storage",
+            "documentType": "Active"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "paymentMethods": {
+    "primaryCard": {
+      "id": "card_001",
+      "cardType": "Visa",
+      "cardNumber": "**** **** **** 1234",
+      "expiryDate": "12/25",
+      "cardHolderName": "John Doe",
+      "bankName":"ICICI BANK"
+    },
+    "savedCards": [
+      {
+        "id": "card_002",
+        "cardType": "MasterCard",
+        "cardNumber": "**** **** **** 5678",
+        "expiryDate": "05/24",
+        "cardHolderName": "Jane Smith",
+         "bankName":"BOI BANK"
+      },
+      {
+        "id": "card_003",
+        "cardType": "American Express",
+        "cardNumber": "**** **** **** 9101",
+        "expiryDate": "08/23",
+        "cardHolderName": "Alice Brown",
+         "bankName":"SBI BANK"
+      },
+      {
+        "id": "card_004",
+        "cardType": "Discover",
+        "cardNumber": "**** **** **** 1121",
+        "expiryDate": "11/26",
+        "cardHolderName": "Bob White",
+         "bankName":"HDFC BANK"
+      }
+    ]
+  }
+}

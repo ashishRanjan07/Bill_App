@@ -8,37 +8,37 @@ import {
   Text,
   TouchableOpacity,
   View,
-} from 'react-native';
-import React, {useEffect, useState} from 'react';
-import Colors from '../../utils/AppColor';
-import DrawerHeader from '../../components/DrawerHeader';
-import {fetchUserData} from '../../utils/CommonFunction';
-import FontFamily from '../../utils/FontFamily';
+} from "react-native";
+import React, { useEffect, useState } from "react";
+import Colors from "../../utils/AppColor";
+import DrawerHeader from "../../components/DrawerHeader";
+import { fetchUserData } from "../../utils/CommonFunction";
+import FontFamily from "../../utils/FontFamily";
 import {
   moderateScale,
   moderateScaleVertical,
   textScale,
-} from '../../utils/ResponsiveSize';
-import {ImagePath} from '../../utils/ImagePath';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import BoxItem from '../../components/BoxItem';
-import {BarChart} from 'react-native-chart-kit';
-import {useNavigation} from '@react-navigation/native';
+} from "../../utils/ResponsiveSize";
+import { ImagePath } from "../../utils/ImagePath";
+import MaterialIcons from "react-native-vector-icons/MaterialIcons";
+import BoxItem from "../../components/BoxItem";
+import { BarChart } from "react-native-chart-kit";
+import { useNavigation } from "@react-navigation/native";
 
 const Dashboard = () => {
   const navigation = useNavigation();
   const [userData, setUserData] = useState(null);
   useEffect(() => {
-    fetchUserDataFunction('user');
+    fetchUserDataFunction("user");
   }, []);
-  const fetchUserDataFunction = async id => {
+  const fetchUserDataFunction = async (id) => {
     const response = await fetchUserData(id);
     setUserData(response);
   };
-  const screenWidth = Dimensions.get('window').width;
+  const screenWidth = Dimensions.get("window").width;
 
   const data = {
-    labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+    labels: ["January", "February", "March", "April", "May", "June"],
     datasets: [
       {
         data: [20, 45, 28, 80, 99, 43],
@@ -50,16 +50,17 @@ const Dashboard = () => {
     <View style={styles.main}>
       <SafeAreaView />
       <StatusBar
-        barStyle={'dark-content'}
+        barStyle={"dark-content"}
         backgroundColor={Colors.background}
       />
-      <DrawerHeader title={'Home'} />
+      <DrawerHeader title={"Home"} />
       <ScrollView
         style={styles.scrollView}
-        showsVerticalScrollIndicator={false}>
+        showsVerticalScrollIndicator={false}
+      >
         <View style={styles.headerTextView}>
           <Text style={styles.text}>Hello,</Text>
-          <Text style={[styles.text, {fontFamily: FontFamily.Roboto_Medium}]}>
+          <Text style={[styles.text, { fontFamily: FontFamily.Roboto_Medium }]}>
             {userData?.email}
           </Text>
         </View>
@@ -67,12 +68,17 @@ const Dashboard = () => {
         <ImageBackground
           source={ImagePath.homeCard}
           resizeMode="cover"
-          style={styles.backgroundImageStyle}>
+          style={styles.backgroundImageStyle}
+        >
           <View style={styles.detailsHolder}>
             <View style={styles.cardTextView}>
               <Text style={styles.cardText}>Total Subscription </Text>
               <Text
-                style={[styles.cardText, {fontFamily: FontFamily.Roboto_Bold}]}>
+                style={[
+                  styles.cardText,
+                  { fontFamily: FontFamily.Roboto_Bold },
+                ]}
+              >
                 Balance
               </Text>
             </View>
@@ -87,13 +93,15 @@ const Dashboard = () => {
           </View>
           <View style={styles.buttonHolder}>
             <TouchableOpacity
-              style={{width: '50%', alignItems: 'center'}}
-              onPress={() => navigation.navigate('View Details')}>
+              style={{ width: "50%", alignItems: "center" }}
+              onPress={() => navigation.navigate("View Details")}
+            >
               <Text style={styles.buttonText}>View Details</Text>
             </TouchableOpacity>
             <TouchableOpacity
-              style={{width: '50%', alignItems: 'center'}}
-              onPress={() => navigation.navigate('Pay Outstanding')}>
+              style={{ width: "50%", alignItems: "center" }}
+              onPress={() => navigation.navigate("Pay Outstanding")}
+            >
               <Text style={styles.buttonText}>Pay Outstanding</Text>
             </TouchableOpacity>
           </View>
@@ -104,33 +112,33 @@ const Dashboard = () => {
           <View style={styles.boxHolder}>
             <BoxItem
               name="My Subscription"
-              image={'subscriptions'}
-              handleAction={() => navigation.navigate('My Subscription')}
+              image={ImagePath.mySubscription}
+              handleAction={() => navigation.navigate("My Subscription")}
             />
             <BoxItem
               name="Buy Subscription"
-              image={'subtitles'}
-              handleAction={() => navigation.navigate('Buy Subscription')}
+              image={ImagePath.buySubscription}
+              handleAction={() => navigation.navigate("Buy Subscription")}
             />
             <BoxItem
               name="Payment History"
-              image={'history'}
-              handleAction={() => console.log('Clicked')}
+              image={ImagePath.history}
+              handleAction={() => navigation.navigate('Payment History')}
             />
             <BoxItem
               name="Invoice"
-              image={'receipt'}
-              handleAction={() => console.log('Clicked')}
+              image={ImagePath.invoice}
+              handleAction={() => console.log("Clicked")}
             />
             <BoxItem
               name="Offers"
-              image={'local-offer'}
-              handleAction={() => console.log('Clicked')}
+              image={ImagePath.offer}
+              handleAction={() => console.log("Clicked")}
             />
             <BoxItem
               name="Pre Bills"
-              image={'wysiwyg'}
-              handleAction={() => console.log('Clicked')}
+              image={ImagePath.preBill}
+              handleAction={() => navigation.navigate('Pre Bills')}
             />
           </View>
         </View>
@@ -138,8 +146,9 @@ const Dashboard = () => {
         <View
           style={[
             styles.itemBoxHolder,
-            {marginTop: moderateScaleVertical(10)},
-          ]}>
+            { marginTop: moderateScaleVertical(10) },
+          ]}
+        >
           <Text style={styles.fText}>Billing History</Text>
           <BarChart
             width={screenWidth * 0.9}
@@ -181,8 +190,8 @@ const styles = StyleSheet.create({
     marginLeft: moderateScale(16),
     marginVertical: moderateScaleVertical(10),
     padding: moderateScale(10),
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     gap: moderateScale(5),
   },
   text: {
@@ -193,9 +202,9 @@ const styles = StyleSheet.create({
   backgroundImageStyle: {
     width: moderateScale(370),
     height: moderateScale(200),
-    alignSelf: 'center',
+    alignSelf: "center",
     borderRadius: moderateScale(15),
-    overflow: 'hidden',
+    overflow: "hidden",
   },
   cardText: {
     fontFamily: FontFamily.Roboto_Light,
@@ -203,8 +212,8 @@ const styles = StyleSheet.create({
     fontSize: textScale(18),
   },
   cardTextView: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
   },
   amountText: {
     fontFamily: FontFamily.Roboto_Bold,
@@ -225,9 +234,9 @@ const styles = StyleSheet.create({
   buttonHolder: {
     marginTop: moderateScaleVertical(32),
     height: moderateScale(57),
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
   },
   fText: {
     fontFamily: FontFamily.Roboto_Bold,
@@ -235,16 +244,16 @@ const styles = StyleSheet.create({
     color: Colors.black,
   },
   boxHolder: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexWrap: 'wrap',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    flexWrap: "wrap",
     gap: moderateScale(5),
   },
   itemBoxHolder: {
     marginTop: moderateScaleVertical(26.5),
-    width: '95%',
-    alignSelf: 'center',
+    width: "95%",
+    alignSelf: "center",
     padding: moderateScale(10),
     gap: moderateScaleVertical(10),
   },

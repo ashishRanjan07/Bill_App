@@ -1,11 +1,13 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import WrapperContainer from '../../components/WrapperContainer'
+import DrawerHeader from '../../components/DrawerHeader'
 
 const TermsOfUse = () => {
   return (
-    <View>
-      <Text>TermsOfUse</Text>
-    </View>
+    <WrapperContainer>
+     <DrawerHeader title={"Terms of Use"}/>
+    </WrapperContainer>
   )
 }
 

@@ -1,0 +1,57 @@
+{
+    "subscriptions": [
+      {
+        "name": "Printer Service - Gold",
+        "price": 29.99,
+        "description": "The Gold subscription offers regular maintenance and minor repairs, including cartridge replacement, cleaning, and diagnostic checks. Ideal for personal users with moderate printing needs."
+      },
+      {
+        "name": "Printer Service - Silver",
+        "price": 19.99,
+        "description": "The Silver subscription provides basic printer service including bi-annual maintenance and troubleshooting support. Ideal for light home office use."
+      },
+      {
+        "name": "Printer Service - Diamond",
+        "price": 49.99,
+        "description": "The Diamond subscription gives premium service including priority repair, unlimited ink, annual full inspection, and 24/7 customer support. Best suited for high-volume printing businesses."
+      },
+      {
+        "name": "Printer Service - Platinum",
+        "price": 69.99,
+        "description": "The Platinum subscription is designed for enterprise-level users. It offers everything in the Diamond plan, plus an extra set of free accessories every year and an exclusive VIP support hotline."
+      },
+      {
+        "name": "Printer Service - Basic",
+        "price": 9.99,
+        "description": "The Basic subscription offers minimal support including diagnostic troubleshooting once per year and limited discounts on repair parts. Perfect for occasional home users."
+      }
+    ],
+    "warranties": [
+      {
+        "name": "Standard Warranty",
+        "duration": "1 year",
+        "coverage": "Covers defects in materials and workmanship. Limited to hardware issues. Does not cover accidental damage or misuse."
+      },
+      {
+        "name": "Extended Warranty",
+        "duration": "3 years",
+        "coverage": "Includes all coverage of the Standard Warranty plus free repair services for accidental damage (excluding intentional misuse)."
+      },
+      {
+        "name": "Premium Warranty",
+        "duration": "5 years",
+        "coverage": "Comprehensive warranty including full coverage for both hardware and accidental damage. Priority service and 24/7 support."
+      },
+      {
+        "name": "Lifetime Warranty",
+        "duration": "Lifetime",
+        "coverage": "Covers all repairs and maintenance for the lifetime of the printer, including both hardware defects and accidental damage. VIP treatment with a dedicated support line."
+      },
+      {
+        "name": "Accidental Damage Warranty",
+        "duration": "2 years",
+        "coverage": "Covers all accidental damages like drops, spills, and mishandling. Includes free replacement for broken components. Does not cover wear and tear from normal use."
+      }
+    ]
+  }
+  

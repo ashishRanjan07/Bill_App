@@ -1,0 +1,320 @@
+{
+    "paymentHistory": [
+      {
+        "accountId": "A12345",
+        "paymentAdvice": "TXN987654321",
+        "paymentDate": "2024-11-12",
+        "amount": 1500.00,
+        "currency": "USD",
+        "referenceId": "REF123456789",
+        "paymentMethod": "Credit Card",
+        "invoiceDate": "2024-10-30",
+        "payerName": "John Doe",
+        "recipientName": "XYZ Corporation",
+        "transactionStatus": "Completed",
+        "paymentStatus": "Successful",
+        "paymentDetails": {
+          "billingAddress": "1234 Elm St, City, State, 12345",
+          "paymentProcessor": "Visa",
+          "transactionFee": 2.5,
+          "transactionFeeCurrency": "USD"
+        },
+        "additionalNotes": "Payment received for invoice #INV123456"
+      },
+      {
+        "accountId": "A67890",
+        "paymentAdvice": "TXN123987654",
+        "paymentDate": "2024-11-10",
+        "amount": 500.00,
+        "currency": "EUR",
+        "referenceId": "REF987654321",
+        "paymentMethod": "Bank Transfer",
+        "invoiceDate": "2024-10-25",
+        "payerName": "Alice Smith",
+        "recipientName": "ABC Ltd.",
+        "transactionStatus": "Completed",
+        "paymentStatus": "Successful",
+        "paymentDetails": {
+          "billingAddress": "5678 Oak St, Town, Country, 67890",
+          "paymentProcessor": "Bank of XYZ",
+          "transactionFee": 1.5,
+          "transactionFeeCurrency": "EUR"
+        },
+        "additionalNotes": "Payment made for services rendered."
+      },
+      {
+        "accountId": "A11223",
+        "paymentAdvice": "TXN1122334455",
+        "paymentDate": "2024-11-05",
+        "amount": 200.00,
+        "currency": "GBP",
+        "referenceId": "REF1122334455",
+        "paymentMethod": "PayPal",
+        "invoiceDate": "2024-10-20",
+        "payerName": "Michael Brown",
+        "recipientName": "Tech Solutions Ltd.",
+        "transactionStatus": "Completed",
+        "paymentStatus": "Successful",
+        "paymentDetails": {
+          "billingAddress": "91011 Birch Rd, Cityville, UK, AB12 3CD",
+          "paymentProcessor": "PayPal",
+          "transactionFee": 0.5,
+          "transactionFeeCurrency": "GBP"
+        },
+        "additionalNotes": "Payment for monthly subscription."
+      },
+      {
+        "accountId": "A21456",
+        "paymentAdvice": "TXN9988776655",
+        "paymentDate": "2024-11-03",
+        "amount": 350.00,
+        "currency": "USD",
+        "referenceId": "REF9988776600",
+        "paymentMethod": "Debit Card",
+        "invoiceDate": "2024-10-10",
+        "payerName": "Laura Wilson",
+        "recipientName": "Global Enterprises",
+        "transactionStatus": "Completed",
+        "paymentStatus": "Successful",
+        "paymentDetails": {
+          "billingAddress": "123 Park Ave, New York, NY, 10001",
+          "paymentProcessor": "MasterCard",
+          "transactionFee": 1.2,
+          "transactionFeeCurrency": "USD"
+        },
+        "additionalNotes": "Payment for consulting services."
+      },
+      {
+        "accountId": "A13579",
+        "paymentAdvice": "TXN5463728190",
+        "paymentDate": "2024-10-29",
+        "amount": 750.00,
+        "currency": "USD",
+        "referenceId": "REF8821123456",
+        "paymentMethod": "Wire Transfer",
+        "invoiceDate": "2024-10-15",
+        "payerName": "Richard Lee",
+        "recipientName": "Software Solutions Ltd.",
+        "transactionStatus": "Completed",
+        "paymentStatus": "Successful",
+        "paymentDetails": {
+          "billingAddress": "876 Maple St, Citytown, CA, 90210",
+          "paymentProcessor": "Wells Fargo",
+          "transactionFee": 5.0,
+          "transactionFeeCurrency": "USD"
+        },
+        "additionalNotes": "Payment for annual software license renewal."
+      },
+      {
+        "accountId": "A24680",
+        "paymentAdvice": "TXN3216549870",
+        "paymentDate": "2024-10-28",
+        "amount": 1200.00,
+        "currency": "AUD",
+        "referenceId": "REF3478925610",
+        "paymentMethod": "Credit Card",
+        "invoiceDate": "2024-10-05",
+        "payerName": "Emily Clark",
+        "recipientName": "Travel Group Australia",
+        "transactionStatus": "Completed",
+        "paymentStatus": "Successful",
+        "paymentDetails": {
+          "billingAddress": "42 Sunshine Ave, Sydney, NSW, 2000",
+          "paymentProcessor": "American Express",
+          "transactionFee": 3.0,
+          "transactionFeeCurrency": "AUD"
+        },
+        "additionalNotes": "Payment for travel booking and accommodation."
+      },
+      {
+        "accountId": "A98765",
+        "paymentAdvice": "TXN5678901234",
+        "paymentDate": "2024-10-25",
+        "amount": 950.00,
+        "currency": "CAD",
+        "referenceId": "REF1122335566",
+        "paymentMethod": "PayPal",
+        "invoiceDate": "2024-10-05",
+        "payerName": "Jessica Taylor",
+        "recipientName": "Design Studio Inc.",
+        "transactionStatus": "Completed",
+        "paymentStatus": "Successful",
+        "paymentDetails": {
+          "billingAddress": "789 Queen St, Toronto, ON, M5V 2H1",
+          "paymentProcessor": "PayPal",
+          "transactionFee": 4.0,
+          "transactionFeeCurrency": "CAD"
+        },
+        "additionalNotes": "Payment for website design services."
+      },
+      {
+        "accountId": "A10203",
+        "paymentAdvice": "TXN9827364958",
+        "paymentDate": "2024-10-21",
+        "amount": 300.00,
+        "currency": "NZD",
+        "referenceId": "REF6655443322",
+        "paymentMethod": "Bank Transfer",
+        "invoiceDate": "2024-10-10",
+        "payerName": "Sarah Morgan",
+        "recipientName": "Kiwi Tech Ltd.",
+        "transactionStatus": "Completed",
+        "paymentStatus": "Successful",
+        "paymentDetails": {
+          "billingAddress": "44 North Rd, Auckland, NZ, 1010",
+          "paymentProcessor": "ANZ Bank",
+          "transactionFee": 2.5,
+          "transactionFeeCurrency": "NZD"
+        },
+        "additionalNotes": "Payment for software subscription."
+      },
+      {
+        "accountId": "A76382",
+        "paymentAdvice": "TXN3847583920",
+        "paymentDate": "2024-10-18",
+        "amount": 450.00,
+        "currency": "USD",
+        "referenceId": "REF3948202022",
+        "paymentMethod": "Debit Card",
+        "invoiceDate": "2024-09-25",
+        "payerName": "Matthew Green",
+        "recipientName": "Global Tech Co.",
+        "transactionStatus": "Completed",
+        "paymentStatus": "Successful",
+        "paymentDetails": {
+          "billingAddress": "33 Liberty St, Boston, MA, 02108",
+          "paymentProcessor": "Visa",
+          "transactionFee": 1.8,
+          "transactionFeeCurrency": "USD"
+        },
+        "additionalNotes": "Payment for cloud storage services."
+      },
+      {
+        "accountId": "A54321",
+        "paymentAdvice": "TXN1357924680",
+        "paymentDate": "2024-10-15",
+        "amount": 220.00,
+        "currency": "GBP",
+        "referenceId": "REF7284736591",
+        "paymentMethod": "Wire Transfer",
+        "invoiceDate": "2024-10-01",
+        "payerName": "Olivia Roberts",
+        "recipientName": "Elite Services Ltd.",
+        "transactionStatus": "Completed",
+        "paymentStatus": "Successful",
+        "paymentDetails": {
+          "billingAddress": "222 High St, London, UK, WC2N 5DU",
+          "paymentProcessor": "Barclays Bank",
+          "transactionFee": 2.0,
+          "transactionFeeCurrency": "GBP"
+        },
+        "additionalNotes": "Payment for professional services."
+      },
+      {
+        "accountId": "A31209",
+        "paymentAdvice": "TXN8546231987",
+        "paymentDate": "2024-10-12",
+        "amount": 800.00,
+        "currency": "USD",
+        "referenceId": "REF9038475612",
+        "paymentMethod": "Credit Card",
+        "invoiceDate": "2024-09-30",
+        "payerName": "David White",
+        "recipientName": "Innovative Solutions",
+        "transactionStatus": "Completed",
+        "paymentStatus": "Successful",
+        "paymentDetails": {
+          "billingAddress": "11 River St, Seattle, WA, 98101",
+          "paymentProcessor": "MasterCard",
+          "transactionFee": 3.0,
+          "transactionFeeCurrency": "USD"
+        },
+        "additionalNotes": "Payment for consultancy services."
+      },
+      {
+        "accountId": "A45678",
+        "paymentAdvice": "TXN1726459871",
+        "paymentDate": "2024-10-10",
+        "amount": 650.00,
+        "currency": "EUR",
+        "referenceId": "REF2233445566",
+        "paymentMethod": "Bank Transfer",
+        "invoiceDate": "2024-09-25",
+        "payerName": "Ethan King",
+        "recipientName": "Digital Marketing Co.",
+        "transactionStatus": "Completed",
+        "paymentStatus": "Successful",
+        "paymentDetails": {
+          "billingAddress": "56 Riverside Rd, Berlin, Germany, 12345",
+          "paymentProcessor": "Deutsche Bank",
+          "transactionFee": 3.5,
+          "transactionFeeCurrency": "EUR"
+        },
+        "additionalNotes": "Payment for social media services."
+      },
+      {
+        "accountId": "A90817",
+        "paymentAdvice": "TXN5627381490",
+        "paymentDate": "2024-10-08",
+        "amount": 700.00,
+        "currency": "CAD",
+        "referenceId": "REF3412786543",
+        "paymentMethod": "PayPal",
+        "invoiceDate": "2024-09-18",
+        "payerName": "Sophia Carter",
+        "recipientName": "HealthTech Solutions",
+        "transactionStatus": "Completed",
+        "paymentStatus": "Successful",
+        "paymentDetails": {
+          "billingAddress": "76 Victoria Rd, Vancouver, BC, V5Z 4H5",
+          "paymentProcessor": "PayPal",
+          "transactionFee": 2.5,
+          "transactionFeeCurrency": "CAD"
+        },
+        "additionalNotes": "Payment for health tech device purchase."
+      },
+      {
+        "accountId": "A56381",
+        "paymentAdvice": "TXN2398475601",
+        "paymentDate": "2024-10-05",
+        "amount": 120.00,
+        "currency": "USD",
+        "referenceId": "REF6453028473",
+        "paymentMethod": "Credit Card",
+        "invoiceDate": "2024-09-15",
+        "payerName": "Joshua Allen",
+        "recipientName": "Music Shop Ltd.",
+        "transactionStatus": "Completed",
+        "paymentStatus": "Successful",
+        "paymentDetails": {
+          "billingAddress": "12 Music Ave, Los Angeles, CA, 90001",
+          "paymentProcessor": "MasterCard",
+          "transactionFee": 1.0,
+          "transactionFeeCurrency": "USD"
+        },
+        "additionalNotes": "Payment for musical instrument purchase."
+      },
+      {
+        "accountId": "A98123",
+        "paymentAdvice": "TXN7483629207",
+        "paymentDate": "2024-10-03",
+        "amount": 400.00,
+        "currency": "USD",
+        "referenceId": "REF8745620937",
+        "paymentMethod": "Wire Transfer",
+        "invoiceDate": "2024-09-28",
+        "payerName": "Grace Walker",
+        "recipientName": "Innovation Labs",
+        "transactionStatus": "Completed",
+        "paymentStatus": "Successful",
+        "paymentDetails": {
+          "billingAddress": "24 Tech Rd, San Francisco, CA, 94105",
+          "paymentProcessor": "Bank of America",
+          "transactionFee": 5.0,
+          "transactionFeeCurrency": "USD"
+        },
+        "additionalNotes": "Payment for prototype development."
+      }
+    ]
+  }
+  

@@ -36,6 +36,10 @@ import FAQ from '../screen/app/FAQ';
 import BottomLogoutModal from '../components/BottomLogoutModal';
 import {useDispatch} from 'react-redux';
 import {login, saveData} from '../redux/action/Action';
+import SolutionOrder from '../screen/app/solutionOrder/SolutionOrder';
+import AboutUs from '../screen/app/AboutUs';
+import TermsOfUse from '../screen/app/TermsOfUse';
+import Entitlement from '../screen/app/entitlement/Entitlement';
 
 function CustomDrawerContent(props) {
   const navigation = useNavigation();
@@ -107,6 +111,26 @@ function CustomDrawerContent(props) {
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.itemHolder}
+          onPress={() => navigation.navigate('Entitlement')}>
+          <MaterialIcons
+            name="subscriptions"
+            color={Colors.black}
+            size={textScale(20)}
+          />
+          <Text style={styles.text}>View Entitlement</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.itemHolder}
+          onPress={() => navigation.navigate('Solution Order')}>
+          <MaterialIcons
+            name="subscriptions"
+            color={Colors.black}
+            size={textScale(20)}
+          />
+          <Text style={styles.text}>Solution Order</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.itemHolder}
           onPress={() => navigation.navigate('Manage Subscription')}>
           <MaterialIcons
             name="manage-history"
@@ -125,12 +149,12 @@ function CustomDrawerContent(props) {
           />
           <Text style={styles.text}>Mange Dispute</Text>
         </TouchableOpacity>
-        <TouchableOpacity
+         <TouchableOpacity
           style={styles.itemHolder}
           onPress={() => navigation.navigate('Swap')}>
           <AntDesign name="swap" color={Colors.black} size={textScale(20)} />
           <Text style={styles.text}>Swap</Text>
-        </TouchableOpacity>
+        </TouchableOpacity> 
         <TouchableOpacity
           style={styles.itemHolder}
           onPress={() => navigation.navigate('Swap History')}>
@@ -150,7 +174,7 @@ function CustomDrawerContent(props) {
         <View style={styles.divider} />
         <TouchableOpacity
           style={styles.itemHolder}
-          onPress={() => navigation.navigate('FAQ')}>
+          onPress={() => navigation.navigate('About Us')}>
           <MaterialIcons
             name="info-outline"
             color={Colors.black}
@@ -160,7 +184,7 @@ function CustomDrawerContent(props) {
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.itemHolder}
-          onPress={() => navigation.navigate('FAQ')}>
+          onPress={() => navigation.navigate('Terms of Use')}>
           <MaterialIcons
             name="policy"
             color={Colors.black}
@@ -207,6 +231,10 @@ const DrawerNavigation = () => {
       <Drawer.Screen name="Swap" component={Swap} />
       <Drawer.Screen name="Swap History" component={SwapHistory} />
       <Drawer.Screen name="FAQ" component={FAQ} />
+      <Drawer.Screen name="Solution Order" component={SolutionOrder} />
+      <Drawer.Screen name="About Us" component={AboutUs} />
+      <Drawer.Screen name="Terms of Use" component={TermsOfUse} />
+      <Drawer.Screen name="Entitlement" component={Entitlement} />
     </Drawer.Navigator>
   );
 };

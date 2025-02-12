@@ -1,0 +1,76 @@
+{
+  "faq": {
+    "general": [
+      {
+        "question": "What types of electronic products do you sell?",
+        "answer": "We offer a wide range of electronic products including smartphones, laptops, tablets, accessories, smart home devices, and more. Check our product categories for a detailed list."
+      },
+      {
+        "question": "How do I place an order?",
+        "answer": "To place an order, simply browse our product catalog, add items to your cart, and proceed to checkout. You can complete the purchase using various payment methods like credit card, PayPal, and other online payment systems."
+      },
+      {
+        "question": "Do you offer international shipping?",
+        "answer": "Yes, we ship to most countries worldwide. Shipping charges and delivery times may vary depending on your location."
+      },
+      {
+        "question": "How can I track my order?",
+        "answer": "Once your order is shipped, you will receive an email with a tracking number. You can use this number on our website or the courier's site to track the status of your shipment."
+      }
+    ],
+    "returns_and_warranty": [
+      {
+        "question": "What is your return policy?",
+        "answer": "We offer a 30-day return policy on most products. If you're not satisfied with your purchase, you can return it for a full refund or exchange, provided the product is in new and unused condition."
+      },
+      {
+        "question": "How do I initiate a return?",
+        "answer": "To initiate a return, please contact our customer support team via email or live chat. We'll guide you through the return process and provide a return shipping label if necessary."
+      },
+      {
+        "question": "Do electronic products come with a warranty?",
+        "answer": "Yes, all electronic products come with a manufacturer's warranty. The duration of the warranty varies by product. You can find the warranty details on the product page."
+      },
+      {
+        "question": "How do I make a warranty claim?",
+        "answer": "To make a warranty claim, please contact our support team with your order details and the issue you're experiencing. We will help you with the next steps."
+      }
+    ],
+    "subscription": [
+      {
+        "question": "What is a subscription service?",
+        "answer": "A subscription service allows you to receive regular deliveries of products or services for a recurring fee. You can subscribe to receive items like phone accessories, tech gadgets, or software services on a monthly or yearly basis."
+      },
+      {
+        "question": "How do I subscribe to a product or service?",
+        "answer": "To subscribe, go to the product or service page you're interested in and select the 'Subscribe' option. Choose your subscription plan (monthly, quarterly, etc.) and complete the payment process."
+      },
+      {
+        "question": "Can I cancel or modify my subscription?",
+        "answer": "Yes, you can cancel or modify your subscription at any time through your account settings. If you need assistance, please contact our customer service team."
+      },
+      {
+        "question": "Are there any discounts for subscribing?",
+        "answer": "Yes, we offer discounts for subscribers. The more extended the subscription period, the greater the discount. Check the product page for specific offers and pricing."
+      },
+      {
+        "question": "What happens if I miss a subscription payment?",
+        "answer": "If a payment fails, we will notify you via email. You will have a grace period to update your payment method before the subscription is paused. If payment is not received within this period, your subscription will be canceled."
+      }
+    ],
+    "account_and_billing": [
+      {
+        "question": "How do I create an account?",
+        "answer": "To create an account, click the 'Sign Up' button on our homepage and enter your email address and a password. You will also need to provide shipping and billing information."
+      },
+      {
+        "question": "How can I update my billing information?",
+        "answer": "You can update your billing information by logging into your account, going to the 'Account Settings' section, and updating your payment method and address details."
+      },
+      {
+        "question": "Can I change my shipping address after placing an order?",
+        "answer": "If your order hasn't been processed yet, you may be able to change the shipping address by contacting our customer service team. Once an order is shipped, we cannot modify the delivery address."
+      }
+    ]
+  }
+}

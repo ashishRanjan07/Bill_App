@@ -9,49 +9,55 @@ import {
   TextInput,
   TouchableOpacity,
   View,
-} from 'react-native';
-import React, {useState} from 'react';
-import Colors from '../../utils/AppColor';
-import FontFamily from '../../utils/FontFamily';
+} from "react-native";
+import React, { useState } from "react";
+import Colors from "../../utils/AppColor";
+import FontFamily from "../../utils/FontFamily";
 import {
   moderateScale,
   moderateScaleVertical,
   scale,
   textScale,
   width,
-} from '../../utils/ResponsiveSize';
-import {ImagePath} from '../../utils/ImagePath';
-import Ionicons from 'react-native-vector-icons/Ionicons';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import AntDesign from 'react-native-vector-icons/AntDesign';
-import CustomButton from '../../components/CustomButton';
-import { useNavigation } from '@react-navigation/native';
+} from "../../utils/ResponsiveSize";
+import { ImagePath } from "../../utils/ImagePath";
+import Ionicons from "react-native-vector-icons/Ionicons";
+import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
+import AntDesign from "react-native-vector-icons/AntDesign";
+import CustomButton from "../../components/CustomButton";
+import { useNavigation } from "@react-navigation/native";
+import BottomListModal from "../../components/BottomListModal";
 
 const Register = () => {
-    const navigation = useNavigation();
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [email, setEmail] = useState('');
-  const [mobile, setMobile] = useState('');
-  const [password, setPassword] = useState('');
+  const navigation = useNavigation();
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [mobile, setMobile] = useState("");
+  const [password, setPassword] = useState("");
   const [checked, setChecked] = useState(false);
+  const [active, setActive] = useState(false);
+  const [active1, setActive1] = useState(false);
+  const [selectedTypeValue, setSelectedTypevalue] = useState("Corporate");
+  const [selectedCountryValue, setSelectedCountryvalue] = useState("UK");
+
+  const selectTypeStack = [
+    { id: 1, name: "Corporate" },
+    { id: 2, name: "Individual" },
+  ];
+  const countryStack = [
+    { id: 1, name: "UK" },
+    { id: 2, name: "US" },
+  ];
   return (
     <ImageBackground source={ImagePath.background} style={styles.main}>
       <StatusBar
         translucent={true}
-        backgroundColor={'transparent'}
-        barStyle={'light-content'}
+        backgroundColor={"transparent"}
+        barStyle={"light-content"}
       />
-      <SafeAreaView/>
-      {/* <View style={styles.backIconHolder}>
-          <Ionicons
-            name="arrow-back"
-            size={textScale(25)}
-            color={Colors.white}
-          />
-        </View> */}
+      <SafeAreaView />
       <ScrollView style={styles.scrollViewHolder}>
-       
         <View style={styles.logoHolder}>
           <Image
             source={ImagePath.logo}
@@ -65,7 +71,7 @@ const Register = () => {
               placeholder="First Name"
               placeholderTextColor={Colors.white}
               value={firstName}
-              onChangeText={text => setFirstName(text)}
+              onChangeText={(text) => setFirstName(text)}
               keyboardType="default"
               style={styles.inputBox}
             />
@@ -75,33 +81,39 @@ const Register = () => {
               placeholder="Last name"
               placeholderTextColor={Colors.white}
               value={lastName}
-              onChangeText={text => setLastName(text)}
+              onChangeText={(text) => setLastName(text)}
               keyboardType="default"
               style={styles.inputBox}
             />
           </View>
           <View style={styles.typeHolder}>
-            <View style={{width: '45%'}}>
+            <View style={{ width: "45%" }}>
               <Text style={styles.text2}>Select Type</Text>
             </View>
-            <TouchableOpacity style={styles.dropDownHolder}>
-              <Text style={styles.text2}>Corporate</Text>
+            <TouchableOpacity
+              style={styles.dropDownHolder}
+              onPress={() => setActive(!active)}
+            >
+              <Text style={styles.text2}>{selectedTypeValue}</Text>
               <AntDesign
                 name="caretdown"
-                size={textScale(15)}
+                size={textScale(10)}
                 color={Colors.white}
               />
             </TouchableOpacity>
           </View>
           <View style={styles.typeHolder}>
-            <View style={{width: '45%'}}>
+            <View style={{ width: "45%" }}>
               <Text style={styles.text2}>Select Country</Text>
             </View>
-            <TouchableOpacity style={styles.dropDownHolder}>
-              <Text style={styles.text2}>UK</Text>
+            <TouchableOpacity
+              style={styles.dropDownHolder}
+              onPress={() => setActive1(!active1)}
+            >
+              <Text style={styles.text2}>{selectedCountryValue}</Text>
               <AntDesign
                 name="caretdown"
-                size={textScale(15)}
+                size={textScale(10)}
                 color={Colors.white}
               />
             </TouchableOpacity>
@@ -110,10 +122,9 @@ const Register = () => {
             <TextInput
               placeholder="Email ID"
               placeholderTextColor={Colors.white}
-              value={mobile}
-              onChangeText={text => setMobile(text)}
-              maxLength={10}
-              keyboardType="number-pad"
+              value={email}
+              onChangeText={(text) => setEmail(text)}
+              keyboardType="email-address"
               style={styles.inputBox}
             />
           </View>
@@ -122,7 +133,7 @@ const Register = () => {
               placeholder="Mobile Number"
               placeholderTextColor={Colors.white}
               value={mobile}
-              onChangeText={text => setMobile(text)}
+              onChangeText={(text) => setMobile(text)}
               maxLength={10}
               keyboardType="number-pad"
               style={styles.inputBox}
@@ -133,7 +144,7 @@ const Register = () => {
               placeholder="Password"
               placeholderTextColor={Colors.white}
               value={password}
-              onChangeText={text => setPassword(text)}
+              onChangeText={(text) => setPassword(text)}
               keyboardType="default"
               secureTextEntry={true}
               style={styles.inputBox}
@@ -142,9 +153,10 @@ const Register = () => {
 
           <TouchableOpacity
             style={styles.ppHolder}
-            onPress={() => setChecked(!checked)}>
+            onPress={() => setChecked(!checked)}
+          >
             <MaterialCommunityIcons
-              name={checked ? 'checkbox-marked' : 'checkbox-blank-outline'}
+              name={checked ? "checkbox-marked" : "checkbox-blank-outline"}
               size={textScale(20)}
               color={Colors.white}
             />
@@ -156,17 +168,42 @@ const Register = () => {
         </View>
         <View style={styles.buttonHolder}>
           <CustomButton
-            name={'Sign Up'}
-            handleAction={() => navigation.navigate('RegisterVerification')}
+            name={"Sign Up"}
+            handleAction={() => navigation.navigate("RegisterVerification")}
           />
         </View>
-        <TouchableOpacity style={styles.dAccountHolder} onPress={()=> navigation.navigate("Login")}>
+        <TouchableOpacity
+          style={styles.dAccountHolder}
+          onPress={() => navigation.navigate("Login")}
+        >
           <Text style={styles.text2}>Already registered?</Text>
-          <Text style={[styles.text2, {color: Colors.statusBarColor}]}>
+          <Text style={[styles.text2, { color: Colors.statusBarColor }]}>
             Sign in
           </Text>
         </TouchableOpacity>
       </ScrollView>
+      <BottomListModal
+        visible={active}
+        message={"Please select the type"}
+        data={selectTypeStack}
+        hideModal={() => setActive(!active)}
+        handleSelction={(text) => {
+          console.log(text, "Line 180");
+          setSelectedTypevalue(text?.name);
+          setActive(!active);
+        }}
+      />
+       <BottomListModal
+        visible={active1}
+        message={"Please select the country"}
+        data={countryStack}
+        hideModal={() => setActive1(!active1)}
+        handleSelection={(text) => {
+          console.log(text, "Line 180");
+          setSelectedCountryvalue(text?.name);
+          setActive1(!active1);
+        }}
+      />
     </ImageBackground>
   );
 };
@@ -187,18 +224,18 @@ const styles = StyleSheet.create({
     borderBottomColor: Colors.borderColor,
   },
   buttonHolder: {
-    width: '90%',
-    alignSelf: 'center',
-    alignItems: 'center',
+    width: "90%",
+    alignSelf: "center",
+    alignItems: "center",
     marginTop: moderateScaleVertical(27),
   },
   scrollViewHolder: {
-    borderColor: 'red',
+    borderColor: "red",
     flex: 1,
   },
   logoHolder: {
     marginTop: moderateScaleVertical(50),
-    alignItems: 'center',
+    alignItems: "center",
   },
   imageStyle: {
     width: moderateScale(180),
@@ -207,18 +244,18 @@ const styles = StyleSheet.create({
   backIconHolder: {
     // marginBottom: moderateScaleVertical(30),
     marginLeft: moderateScale(20),
-    width: '10%',
-    alignItems: 'center',
+    width: "10%",
+    alignItems: "center",
   },
   textInput: {
     marginTop: moderateScaleVertical(37),
-    width: '90%',
-    alignSelf: 'center',
+    width: "90%",
+    alignSelf: "center",
     gap: moderateScale(15),
     // alignItems:'flex-start'
   },
   text: {
-    width: '90%',
+    width: "90%",
     fontFamily: FontFamily.Roboto_Regular,
     fontSize: textScale(12),
     color: Colors.white,
@@ -226,20 +263,20 @@ const styles = StyleSheet.create({
   },
   ppHolder: {
     marginTop: moderateScaleVertical(15),
-    width: '90%',
-    alignSelf: 'center',
-    flexDirection: 'row',
-    alignItems: 'center',
+    width: "90%",
+    alignSelf: "center",
+    flexDirection: "row",
+    alignItems: "center",
     gap: moderateScale(10),
   },
   dAccountHolder: {
-    width: '90%',
+    width: "90%",
     marginTop: moderateScaleVertical(10),
-    alignItems: 'center',
-    flexDirection: 'row',
-    justifyContent: 'center',
+    alignItems: "center",
+    flexDirection: "row",
+    justifyContent: "center",
     gap: moderateScale(5),
-    alignSelf: 'center',
+    alignSelf: "center",
     marginBottom: moderateScaleVertical(61),
   },
   text2: {
@@ -248,16 +285,16 @@ const styles = StyleSheet.create({
     color: Colors.white,
   },
   typeHolder: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    width: '100%',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    width: "100%",
   },
   dropDownHolder: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    width: '45%',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    width: "45%",
     borderBottomWidth: 2,
     borderBottomColor: Colors.borderColor,
     paddingBottom: moderateScaleVertical(10),

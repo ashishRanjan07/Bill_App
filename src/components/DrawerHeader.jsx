@@ -33,7 +33,7 @@ export default DrawerHeader;
 
 const styles = StyleSheet.create({
   main: {
-    padding: moderateScale(15),
+    paddingHorizontal: moderateScale(15),
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems:'center'

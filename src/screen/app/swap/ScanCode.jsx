@@ -32,7 +32,7 @@ const ScanCode = () => {
   }, []);
   const requestCameraPermission = async () => {
     const newCameraPermission = await Camera.requestCameraPermission();
-    console.log(newCameraPermission, 'Line 29');
+    // console.log(newCameraPermission, 'Line 29');
     if (newCameraPermission === 'denied') {
       Linking.openSettings();
     }

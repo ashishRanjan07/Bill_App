@@ -2,18 +2,17 @@ import { SafeAreaView, StatusBar, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import Colors from '../../utils/AppColor'
 import DrawerHeader from '../../components/DrawerHeader'
+import WrapperContainer from '../../components/WrapperContainer'
 
 const Subscription = () => {
   return (
-    <View style={styles.main}>
-    <SafeAreaView>
-      <StatusBar
-        barStyle={'dark-content'}
-        backgroundColor={Colors.background}
-      />
-     <DrawerHeader title={"Subscription"}/>
-    </SafeAreaView>
-  </View>
+    <WrapperContainer>
+      <DrawerHeader title={"Subscription"}/>
+      <View style={{flex:1}}>
+
+      </View>
+    </WrapperContainer>
+  
   )
 }
 

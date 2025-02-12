@@ -1,14 +1,16 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { StyleSheet, Text, View } from "react-native";
+import React from "react";
+import WrapperContainer from "../../components/WrapperContainer";
+import InternalHeader from "../../components/InternalHeader";
 
 const Notification = () => {
   return (
-    <View>
-      <Text>Notification</Text>
-    </View>
-  )
-}
+    <WrapperContainer>
+      <InternalHeader title={"Notification Center"} />
+    </WrapperContainer>
+  );
+};
 
-export default Notification
+export default Notification;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});
